@@ -130,7 +130,7 @@ if prompt := st.chat_input("Ask a question about your documents..."):
                 
                 # 4. Generate Response via Gemini
                 llm = ChatGoogleGenerativeAI(
-                    model="gemini-2.0-flash",
+                    model="gemini-2.5-flash-lite",
                     google_api_key=get_gemini_api_key(),
                     temperature=0.1
                 )
