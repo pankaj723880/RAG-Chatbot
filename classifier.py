@@ -7,7 +7,7 @@ from utils import get_gemini_api_key, INTENT_PROMPT, handle_error
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 class IntentClassifier:
-    def __init__(self, model: str = 'gemini-2.5-flash'):
+    def __init__(self, model: str = 'gemini-2.5-flash-lite'):
         self.llm = ChatGoogleGenerativeAI(model=model, google_api_key=get_gemini_api_key(), temperature=0.1)
         self.prompt = INTENT_PROMPT
     
